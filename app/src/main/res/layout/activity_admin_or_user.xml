@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminOrUser">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="725dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/n"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <ImageView
+            android:id="@+id/btnAmen"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            app:srcCompat="@drawable/yp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <TextView
+            android:id="@+id/txtIntro"
+            style="@android:style/Widget.DeviceDefault.Light.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Are you an ADMIN or a USER?"
+            android:textColor="#956108"
+            android:textColorHint="#120808"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/white"
+            android:icon="@drawable/ye"
+            android:src="@drawable/admin"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/white"
+            android:icon="@drawable/ye"
+            android:src="@drawable/user"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

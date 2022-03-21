@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUS">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@drawable/paralex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="371dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ummy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Kristine Velasquez"
+                        android:textColor="@color/white"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Developer/ Designer"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableStart="@drawable/ic_location"
+                        android:gravity="center"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:lineSpacingExtra="3.0dip"
+                            android:layout_gravity="center"
+                            android:text="   kristinevelasquez23@gmail.com\n   kristine.velasquez@cit.edu"
+                            android:textColor="@color/white"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="367dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:lineSpacingExtra="3.0dip"
+                            android:text="   Hi there nice to meet you! I am Kristine, a BSIT 2 \n   student of Cebu Institute of Technology University"
+                            android:textColor="@color/white"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="C O N T A C T     U S"
+                    android:textColor="@color/white"
+                    android:textSize="14.0sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

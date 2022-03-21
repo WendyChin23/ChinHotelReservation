@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_bk_color"
+    android:gravity="center"
+    tools:context=".Receipt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="224dp">
+
+            <ImageView
+                android:layout_width="191dp"
+                android:layout_height="224dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginRight="93dp"
+                android:src="@drawable/yp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textvie1"
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:text="View your Customer's Log In Information\n"
+            android:textColor="@color/themeColor"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnviewAll"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="View Log In Information"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
+
+
+        <TextView
+            android:id="@+id/textview1"
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:text="View your Customer's Orders\n"
+            android:textColor="@color/themeColor"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnViewUsers"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="View Orders"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <TextView
+            android:id="@+id/admin"
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:text="\n-Kristine Velasquez (Head Admin)"
+            android:textColor="@color/themeColor"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

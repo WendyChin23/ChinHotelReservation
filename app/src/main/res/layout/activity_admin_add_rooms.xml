@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_bk_color"
+    android:gravity="center"
+    tools:context=".AdminAddRooms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="224dp">
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Book \na \nRoom" />
+
+            <ImageView
+                android:layout_width="191dp"
+                android:layout_height="224dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/yp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/modifiedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Room Type"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Rooms">
+
+
+            <EditText
+                android:id="@+id/editText_Beds"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:hint="Number of Beds"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText_Available"
+            style="@style/modifiedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:hint="Availability"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTextId"
+            style="@style/modifiedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit ID"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnAddData"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <Button
+            android:id="@+id/btnviewUpdate"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <Button
+            android:id="@+id/btnviewAll"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="View All"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <Button
+            android:id="@+id/btnclearreg"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="RESET"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAC15E"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

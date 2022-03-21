@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="725dp"
+        android:background="@drawable/d"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btnAmen"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/yp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:text="WELCOME TO CHIN'S HOTEL RESERVATION  "
+            android:textColor="#FF9800"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/radio_King"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="King Bedroom" />
+
+            <RadioButton
+                android:id="@+id/radio_Family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Family Room" />
+
+            <RadioButton
+                android:id="@+id/radio_Twin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="checkButton"
+                android:text="Twin Room" />
+
+            <RadioButton
+                android:id="@+id/radio_Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="checkButton"
+                android:text="Single Room" />
+
+            <RadioButton
+                android:id="@+id/radio_Couple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="checkButton"
+                android:text="Couple Room" />
+
+            <RadioButton
+                android:id="@+id/radio_Triple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="checkButton"
+                android:text="Triple Room" />
+
+            <RadioButton
+                android:id="@+id/radio_Penthouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="checkButton"
+                android:text="Penthouse" />
+
+        </RadioGroup>
+
+        <TextView
+                android:id="@+id/text_view_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:layout_gravity="center"
+                android:text="Your selection: "
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/text_view_selected"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="Select" />
+
+            <Button
+                android:id="@+id/button_Book"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_selected"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Book" />
+
+        </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
